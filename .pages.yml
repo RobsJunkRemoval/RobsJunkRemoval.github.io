@@ -14,13 +14,21 @@ content:
         type: string
         required: true
       - name: before
-        label: Before Photo
+        label: Before Photos
         type: image
-        required: true
+        options:
+          multiple:
+            max: 20
+          unique: true
+          rename: true
       - name: after
-        label: After Photo
+        label: After Photos
         type: image
-        required: true
+        options:
+          multiple:
+            max: 20
+          unique: true
+          rename: true
       - name: description
         label: Description
         type: text
