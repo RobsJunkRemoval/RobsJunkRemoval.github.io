@@ -1,0 +1,26 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: gallery
+    label: Before & After Photos
+    type: collection
+    path: gallery
+    format: json
+    fields:
+      - name: title
+        label: Job Title
+        type: string
+        required: true
+      - name: before
+        label: Before Photo
+        type: image
+        required: true
+      - name: after
+        label: After Photo
+        type: image
+        required: true
+      - name: description
+        label: Description
+        type: text
